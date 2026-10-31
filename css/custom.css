@@ -1,2 +1,10 @@
 body { min-height: 100vh; }
 .placeholder-box { min-height: 300px; }
+.placeholder-image {
+    min-height: 320px;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
