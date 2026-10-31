@@ -8,7 +8,7 @@
     <!-- Подключение Bootstrap CSS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Собственные стили (всегда подключаются ПОСЛЕ Bootstrap) -->
+    <!-- Собственные стили -->
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
@@ -18,12 +18,10 @@
         <div class="container">
             <a class="navbar-brand" href="index.html">Rick Owens Shop</a>
             
-            <!-- Кнопка для мобильного меню (бургер) -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Переключить навигацию">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <!-- Само меню -->
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -57,10 +55,8 @@
                     <a class="btn btn-dark btn-lg" href="catalog.html">Перейти в каталог</a>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <!-- Блок-заглушка для картинки -->
-                    <div class="placeholder-box bg-light border rounded d-flex align-items-center justify-content-center">
-                        <span class="text-muted">Здесь может быть изображение или баннер</span>
-                    </div>
+                    <!-- ВСТАВЛЕНА ВАША НОВАЯ КАРТИНКА -->
+                    <img src="https://cdn1.ozonusercontent.com/s3/product-service-meta-media/db0dad91-f646-453c-8c2d-a75bb1e1d70c.jpg" class="img-fluid rounded shadow-sm" alt="Баннер Rick Owens">
                 </div>
             </div>
         </section>
@@ -101,14 +97,15 @@
                 <!-- Карточка 1 -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
+                        <img src="https://cdn.poizon.com/pro-img/origin-img/20251206/ae208d5e15944f29ae60a9178b10e667.jpg" class="card-img-top" alt="Кеды Converse">
                         <div class="card-body d-flex flex-column">
                             <div class="d-flex justify-content-between align-items-start mb-3">
                                 <h3 class="h5 card-title">Кеды x Converse</h3>
                                 <span class="badge bg-success">Новинка</span>
                             </div>
                             <p class="card-text text-muted">Чёрно-белые высокие кеды от Rick Owens.</p>
-                            <p class="fw-bold fs-5 mt-auto">19990 руб.</p>
-                            <a href="product.html" class="btn btn-dark">Подробнее</a>
+                            <p class="fw-bold fs-5 mt-auto mb-2">19990 руб.</p>
+                            <a href="product.html" class="btn btn-dark mt-2">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -116,14 +113,15 @@
                 <!-- Карточка 2 -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
+                        <img src="https://i.ebayimg.com/images/g/hHEAAOSwvqFoV1kY/s-l1600.jpg" class="card-img-top" alt="Кеды Black Low">
                         <div class="card-body d-flex flex-column">
                             <div class="d-flex justify-content-between align-items-start mb-3">
                                 <h3 class="h5 card-title">Кеды Black Low</h3>
-                                <span class="badge bg-danger">Скидка</span>
+                                <span class="badge bg-warning text-dark">Хит</span>
                             </div>
                             <p class="card-text text-muted">Чёрные низкие кеды от Rick Owens.</p>
-                            <p class="fw-bold fs-5 mt-auto">69990 руб.</p>
-                            <a href="product.html" class="btn btn-dark">Подробнее</a>
+                            <p class="fw-bold fs-5 mt-auto mb-2">69990 руб.</p>
+                            <a href="product-black-low.html" class="btn btn-dark mt-2">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -131,14 +129,18 @@
                 <!-- Карточка 3 -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
+                        <img src="https://usmall.ru/image/1407/25/64/a1e325dbf848eb90a4ee4cf05c4357e7.jpeg" class="card-img-top" alt="Кеды Jumbоlace">
                         <div class="card-body d-flex flex-column">
                             <div class="d-flex justify-content-between align-items-start mb-3">
                                 <h3 class="h5 card-title">JUMBOLACE SNEAKS</h3>
-                                <span class="badge bg-warning text-dark">Хит</span>
+                                <span class="badge bg-danger">Скидка</span>
                             </div>
                             <p class="card-text text-muted">Бежевые низкие кеды от Rick Owens.</p>
-                            <p class="fw-bold fs-5 mt-auto">50990 руб.</p>
-                            <a href="product.html" class="btn btn-dark">Подробнее</a>
+                            <p class="mt-auto mb-2">
+                                <span class="text-muted text-decoration-line-through me-2">59900 руб.</span>
+                                <span class="fw-bold fs-5 text-danger">50990 руб.</span>
+                            </p>
+                            <a href="product-jumbo.html" class="btn btn-dark mt-2">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -161,7 +163,7 @@
         </div>
     </footer>
 
-    <!-- Подключение Bootstrap JS (ОБЯЗАТЕЛЬНО в самом конце, для работы меню и модалок) -->
+    <!-- Подключение Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

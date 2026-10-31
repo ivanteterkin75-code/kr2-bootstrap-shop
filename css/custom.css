@@ -1,10 +1,21 @@
-body { min-height: 100vh; }
-.placeholder-box { min-height: 300px; }
-.placeholder-image {
-    min-height: 320px;
+/* Базовые настройки */
+body { 
+    min-height: 100vh; 
 }
 
+/* Контейнер для картинок в карточках товаров */
 .card-img-top {
-    height: 180px;
-    object-fit: cover;
+    width: 100%;
+    height: 320px;          /* Увеличили высоту с 250 до 320px (картинка станет крупнее) */
+    object-fit: contain;    /* Картинка видна ЦЕЛИКОМ, не обрезается */
+    background-color: #ffffff; 
+    padding: 10px;          /* Оставили небольшой отступ, чтобы не прилипала к краям */
+}
+/* Стили для картинки на странице товара (чтобы она не была гигантской) */
+.product-main-image {
+    width: 100%;
+    height: 400px;
+    object-fit: contain; 
+    padding: 20px;
+    background-color: #ffffff;
 }
